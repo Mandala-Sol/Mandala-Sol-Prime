@@ -1,0 +1,4 @@
+[submodule "MandalaSol/Mandala-Sol-Prime"]
+	path = MandalaSol/Mandala-Sol-Prime
+	url = git@github.com:MandalaSol/Mandala-Sol-Prime.git
+	branch = GSO
