@@ -810,13 +810,15 @@ class GTShopifyInstance(models.Model):
         res_id = res_obj.search([('gt_customer_id','=', customer['id'])])
         if not res_id:
             ress = res_obj.create(vals)
+            return ress
+        else:
+            return res_id
+                
 #        except Exception, exc:
 #            logger.error('Exception===================:  %s', exc)
 #            log_line_obj.create({'name':'Create Customer','description':exc,'create_date':date.today(),
 #                                      'shopify_log_id':log_id.id})
 #            log_id.write({'description': 'Something went wrong'})
-    
-        return ress
     
     
     
